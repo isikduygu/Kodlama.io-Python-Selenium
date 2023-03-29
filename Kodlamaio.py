@@ -4,7 +4,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 
 
-class Test_Kodlamaio:
+class Kodlamaio:
     def test_invalid_login(self):
         driver = webdriver.Chrome(ChromeDriverManager().install())
         # tam ekran yapar
@@ -28,7 +28,7 @@ class Test_Kodlamaio:
         print(errorMessage.text == "Epic sadface: Username and password do not match any user in this service")
         sleep(200)
 
-TestClass = Test_Kodlamaio()
+TestClass = Kodlamaio()
 TestClass.test_invalid_login()
 while True:
     continue
